@@ -1,0 +1,21 @@
+{
+  "name": "atcoder",
+  "version": "1.0.0",
+  "description": "atcoder practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts-node": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "atcoder"
+  },
+  "author": "koki shino",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
