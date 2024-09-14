@@ -1,9 +1,13 @@
 ## atcoder-cli,online-judge-tools による AtCoder のローカル自動テスト用のリポジトリ
 
 
-## 参考リンク
-- [AtCoder コンテスト一覧](https://atcoder.jp/contests)
-- [online-judge-tools ドキュメント](https://github.com/online-judge-tools/oj/blob/master/docs/getting-started.ja.md)
+### [AtCoder コンテスト一覧 ↗︎](https://atcoder.jp/contests)
+
+
+## 前提
+- `Node.js` の実行環境がある
+- `gnu-time` がインストール済み
+- [atcoder-cli ↗︎](https://github.com/Tatamo/atcoder-cli) と [online-judge-tools ↗︎](https://github.com/online-judge-tools/oj/blob/master/README.ja.md) がインストール済み
 
 
 ## 作業手順
@@ -18,10 +22,13 @@ acc new <contest_id>
 
 
 ### 2. 回答ファイルの作成
-ダウンロードされた問題のディレクトリに移動し、sample.ts をコピーして main.ts を作成します。
+sample.ts をコピーして main.ts を作成します。
 
 ```
-cp sample.ts main.ts
+./bin/copy-sample.sh <destination directory>
+
+<!-- 例 -->
+./bin/copy-sample.sh contests/abs/abc086a/
 ```
 
 ### 3. コードの記述
