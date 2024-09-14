@@ -22,13 +22,13 @@ acc new <contest_id>
 
 
 ### 2. 回答ファイルの作成
-sample.ts をコピーして main.ts を作成します。
+template.ts をコピーして main.ts を作成します。
 
 ```
-./bin/copy-sample.sh <destination directory>
+./bin/copy-template.sh <destination directory>
 
 <!-- 例 -->
-./bin/copy-sample.sh contests/abs/abc086a/
+./bin/copy-template.sh contests/abs/abc086a/
 ```
 
 ### 3. コードの記述

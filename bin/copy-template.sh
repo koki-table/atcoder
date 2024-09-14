@@ -3,12 +3,12 @@
 # プロジェクトのルートディレクトリへの相対パスを取得
 PROJECT_ROOT=$(git rev-parse --show-toplevel)
 
-# sample.tsファイルのパス
-SAMPLE_FILE="$PROJECT_ROOT/sample/sample.ts"
+# template.tsファイルのパス
+TEMPLATE_FILE="$PROJECT_ROOT/template/template.ts"
 
-# sample.tsファイルが存在するか確認
-if [ ! -f "$SAMPLE_FILE" ]; then
-    echo "Error: sample.ts file not found in the project root."
+# template.tsファイルが存在するか確認
+if [ ! -f "$TEMPLATE_FILE" ]; then
+    echo "Error: template.ts file not found in the project root."
     exit 1
 fi
 
@@ -26,7 +26,7 @@ else
     fi
 fi
 
-# 指定されたディレクトリにsample.tsをmain.tsとしてコピー
-cp "$SAMPLE_FILE" "$TARGET_DIR/main.ts"
+# 指定されたディレクトリにtemplate.tsをmain.tsとしてコピー
+cp "$TEMPLATE_FILE" "$TARGET_DIR/main.ts"
 
-echo "sample.ts has been copied to $TARGET_DIR as main.ts"
+echo "template.ts has been copied to $TARGET_DIR as main.ts"

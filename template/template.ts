@@ -63,16 +63,7 @@ const flush = (): void => {
 
 // メイン処理
 const main = async () => {
-  const a = nextNum();
-  const b = nextNum();
-
-  const product = a * b;
-
-  if (product % 2 === 0) {
-    println("Even");
-  } else {
-    println("Odd");
-  }
+  // ここに回答を記述していく
 };
 
 // プログラムの実行
@@ -80,3 +71,5 @@ readInput().then(() => {
   main();
   flush();
 });
+
+
